@@ -233,7 +233,7 @@ img {
 .dreamyacht-main-title {
   font-weight: 500;
   font-size: 48px;
-  line-height: 100%;
+  line-height: 1;
   letter-spacing: -0.02em;
   text-align: center;
   color: #fbfbfb;
@@ -249,18 +249,87 @@ img {
   justify-content: center;
 }
 
+.dreamyacht-item img {
+  margin-bottom: 32px;
+}
 .dreamyacht-item {
   width: calc(100% - 32px * 2) / 3;
   border-radius: 24px;
   background: #fbfbfb;
   padding: 16px;
+  margin-bottom: 50px;
 }
-
+.dreamyacht-clasification {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
 .dreamyacht-title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: -0.04em;
   text-transform: uppercase;
+  color: #1b414b;
+}
+
+.dreamyacht-type {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #040306;
+  opacity: 0.4;
+}
+
+.dreamyacht-details-list {
+  padding: 0 16px 24px;
+  margin: 0;
+}
+
+.dreamyacht-details-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+}
+
+.dreamyacht-details-list li p:first-child {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  opacity: 0.4;
+  color: #040306;
+}
+
+.dreamyacht-details-list li p:last-child {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: #040306;
+}
+
+.dreamyacht-btn {
+  display: block;
+  margin: 0 auto;
+  background: #0e1823;
+  border: 1px solid rgba(251, 251, 251, 0.35);
+  border-radius: 15px;
+  padding: 16px 40px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+}
+
+.dreamyacht-btn:hover,
+.dreamyacht-btn:focus {
+  background: #fbfbfb;
   color: #1b414b;
 }
