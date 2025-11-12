@@ -346,3 +346,58 @@ img {
   background: #fbfbfb;
   color: #1b414b;
 }
+
+/* Activities section */
+
+.container.activities-container {
+  max-width: 1340px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 50px 90px;
+  background: #1b414b;
+
+}
+.activities-list {
+  list-style: decimal-leading-zero;;
+  max-width: 50%;
+}
+/* .section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px;
+  background-color: #f0f8f8;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.section ol {
+  list-style: decimal inside;
+  padding: 0;
+  margin: 0;
+  max-width: 50%;
+}
+
+.section li {
+  margin-bottom: 20px;
+  background-color: #004d4d;
+  color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section li p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.section img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+} */
