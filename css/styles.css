@@ -260,11 +260,23 @@ img {
   margin-bottom: 50px;
 }
 .dreamyacht-clasification {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 16px;
+  padding: 0 16px 16px;
   margin-bottom: 16px;
+}
+
+.dreamyacht-clasification::after {
+  position: absolute;
+  content: "";
+  bottom: -16px; 
+  width: 328px;
+  height: 1px;
+  background-color: rgba(4, 3, 6, 0.1);
+  bottom: 0;
+
 }
 .dreamyacht-title {
   font-weight: 500;
@@ -288,6 +300,7 @@ img {
 .dreamyacht-details-list {
   padding: 0 16px 24px;
   margin: 0;
+
 }
 
 .dreamyacht-details-list li {
