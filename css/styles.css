@@ -38,7 +38,11 @@ img {
 }
 
 .section {
-  padding: 150px 0;
+  padding: 75px 0;
+}
+
+.section .container {
+  width: 100%;
 }
 
 .container {
@@ -91,21 +95,32 @@ img {
   text-transform: uppercase;
   text-align: center;
   color: #fbfbfb;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-list-link:hover,
 .header-list-link:focus {
   background: #1b414b;
 }
 .header-social {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
   margin-left: auto;
 }
-/* .social-item {
-} */
+
 .social-link {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
+}
+
+.social-icon {
+  fill: #1b414b;
+}
+.social-icon:hover,
+.social-icon:focus {
+  fill: #062730;
 }
 
 /* Main */
@@ -271,12 +286,11 @@ img {
 .dreamyacht-clasification::after {
   position: absolute;
   content: "";
-  bottom: -16px; 
+  bottom: -16px;
   width: 328px;
   height: 1px;
   background-color: rgba(4, 3, 6, 0.1);
   bottom: 0;
-
 }
 .dreamyacht-title {
   font-weight: 500;
@@ -300,7 +314,6 @@ img {
 .dreamyacht-details-list {
   padding: 0 16px 24px;
   margin: 0;
-
 }
 
 .dreamyacht-details-list li {
@@ -339,6 +352,8 @@ img {
   line-height: 1.1;
   letter-spacing: -0.02em;
   color: #fbfbfb;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .dreamyacht-btn:hover,
@@ -352,52 +367,222 @@ img {
 .container.activities-container {
   max-width: 1340px;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
+  background-color: #1b414b;
+  border-radius: 24px;
+  overflow: hidden;
   gap: 32px;
-  padding: 50px 90px;
-  background: #1b414b;
+  padding: 0;
+}
 
-}
 .activities-list {
-  list-style: decimal-leading-zero;;
-  max-width: 50%;
+  list-style: none;
+  counter-reset: activity-counter;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  column-gap: 32px;
+  row-gap: 44px;
+  padding: 90px 50px;
+  margin: 0;
 }
-/* .section {
+
+.activities-list-item {
+  position: relative;
+  padding-top: 40px;
+  max-width: 318px;
+  width: calc(50% - 16px);
+}
+
+.activities-list-item::before {
+  content: counter(activity-counter, decimal-leading-zero);
+  counter-increment: activity-counter;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: #fbfbfb;
+}
+
+.activities-list-item::after {
+  content: "";
+  position: absolute;
+  top: 36px;
+  left: 0;
+  width: 100%;
+  max-width: 318px;
+  border-radius: 18px;
+  height: 2px;
+  background: rgba(251, 251, 251, 0.1);
+}
+
+.activities-list-descr {
+  margin: 0;
+  margin-top: 18px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  opacity: 0.8;
+  max-width: 292px;
+}
+
+.activities-container img {
+  width: 540px;
+  max-width: 50%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.container.rentyacht-container {
+  max-width: 1340px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px;
-  padding: 40px;
-  background-color: #f0f8f8;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.section ol {
-  list-style: decimal inside;
+  border-radius: 24px;
+  overflow: hidden;
+  gap: 50px;
   padding: 0;
+}
+
+.rentyacht-container img {
+  width: 768px;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
   margin: 0;
-  max-width: 50%;
+  padding: 0;
+  display: block;
 }
 
-.section li {
-  margin-bottom: 20px;
-  background-color: #004d4d;
-  color: #ffffff;
-  padding: 15px 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.rentyacht-title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  margin-bottom: 50px;
 }
 
-.section li p {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.5;
+.rentyacht-form {
+  display: flex;
+  flex-direction: column;
+  width: 472px;
+  height: 332px;
+  gap: 18px;
 }
-
-.section img {
-  max-width: 50%;
-  height: auto;
+.input-form {
+  border: none;
+  border: 1px solid rgba(251, 251, 251, 0.2);
   border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-} */
+  padding: 18px;
+  width: 472px;
+  height: 54px;
+  background-color: transparent;
+  outline: transparent;
+  color: #fbfbfb;
+}
+
+.input-form:focus,
+.input-form:focus-visible {
+  outline: none;
+  border-color: rgba(251, 251, 251, 0.5);
+}
+
+.input-form::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  color: rgba(251, 251, 251, 0.4);
+}
+
+.textarea-form {
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 12px;
+  padding: 18px;
+  width: 472px;
+  height: 116px;
+  background-color: transparent;
+  outline: transparent;
+  color: #fbfbfb;
+  resize: none;
+  margin-bottom: calc(50px-18px);
+}
+
+.textarea-form:focus,
+.textareaform:focus-visible {
+  outline: none;
+  border-color: rgba(251, 251, 251, 0.5);
+}
+
+.textarea-form::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  color: rgba(251, 251, 251, 0.4);
+}
+
+.form-btn {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  min-width: 194px;
+  border-radius: 15px;
+  padding: 18px 75px;
+  width: 194px;
+  background: #1b414b;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+}
+
+.form-btn:hover,
+.form-btn:focus {
+  background: #fbfbfb;
+  color: #1b414b;
+}
+
+/* @media (max-width: 768px) {
+  .container.activities-container {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .activities-list {
+    padding: 40px 20px;
+    row-gap: 32px;
+  }
+
+  .activities-list-item {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .activities-list-item::after {
+    max-width: 100%;
+  }
+
+  .activities-list-item::before {
+    font-size: 24px;
+  }
+
+  .activities-list-descr {
+    font-size: 16px;
+  }
+
+  .activities-container img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+

@@ -45,21 +45,25 @@
               class="social-link"
               href="https://www.instagram.com/"
               target="_blank"
-            ></a>
+            > <svg class="social-icon" width="19" height="19">
+              <use href="/images/icons.svg#icon-instagram"></use></svg>
+          </a>
           </li>
           <li class="social-item">
             <a
               class="social-link"
               href="https://www.youtube.com/"
               target="_blank"
-            ></a>
+            ><svg class="social-icon" width="19" height="19">
+              <use href="/images/icons.svg#icon-youtube"></use></svg></a>
           </li>
           <li class="social-item">
             <a
               class="social-link"
               href="https://www.facebook.com/"
               target="_blank"
-            ></a>
+            ><svg class="social-icon" width="19" height="19">
+              <use href="/images/icons.svg#icon-facebook"></use></svg></a>
           </li>
         </ul>
       </div>
@@ -211,23 +215,24 @@
                 </section>
 
 <!-- Activities section -->
+ 
         <section class="section">
           <div class="container activities-container">
             <ol class="activities-list">
-              <li>
-                <p>Swimming and water sports: try your hand at water skiing</p>
+              <li class="activities-list-item">
+                <p class="activities-list-descr">Swimming and water sports: try your hand at water skiing</p>
               </li>
-              <li>
-                <p>Fishing: try to catch your own dinner</p>
+              <li class="activities-list-item">
+                <p class="activities-list-descr">Fishing: try to catch your own dinner</p>
               </li>
-              <li>
-                <p>
+              <li class="activities-list-item">
+                <p class="activities-list-descr">
                   Sightseeing tours: take a shore or island tour, enjoy the views
                   and sunsets from the water
                 </p>
               </li>
-              <li>
-                <p>
+              <li class="activities-list-item">
+                <p class="activities-list-descr">
                   Rest and relaxation: read a book or listen to music while enjoying
                   the outdoor atmosphere.
                 </p>
@@ -235,10 +240,30 @@
             </ol>
             <img src="./images/activities.png" alt="activities" width="540" />
                   </section>
-                  <section>
+
+<!-- Rent yacht section -->
+
+                  <section class="section"> 
+                    <div class="container rentyacht-container">
             <img src="./images/rentyacht.png" alt="rent yacht" width="768" />
-            <h2>Rent a yacht now</h2>
-                    <button type="button">Send</button>
+            <div>
+              <h2 class="rentyacht-title">Rent a yacht now</h2>
+                <form class="rentyacht-form">
+                  <label for="fullname">
+                    <input class="input-form" type="text" name="fullname" id="fullname" placeholder="Full name" required>
+                  </label>
+                  <label for="email">
+                    <input class="input-form" type="email" name="email" id="email" placeholder="Email" required>
+                  </label>
+                  <label for="phone">
+                    <input class="input-form" type="tel" name="phone" id="phone" placeholder="Phone number" required>
+                  </label>
+                  <label for="comment">
+                    <textarea class="textarea-form" name="comment" id="comment" placeholder="Comment"></textarea>
+                  </label>
+                  <button class="form-btn" type="submit">Send</button>
+                </form>
+            </div>
           </div>
       </section>
 
