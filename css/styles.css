@@ -442,6 +442,8 @@ img {
   display: block;
 }
 
+/* Rentyacht section */
+
 .container.rentyacht-container {
   max-width: 1340px;
   display: flex;
@@ -551,38 +553,79 @@ img {
   color: #1b414b;
 }
 
-/* @media (max-width: 768px) {
-  .container.activities-container {
-    flex-direction: column;
-    gap: 32px;
-  }
+/* Team section */
 
-  .activities-list {
-    padding: 40px 20px;
-    row-gap: 32px;
-  }
-
-  .activities-list-item {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .activities-list-item::after {
-    max-width: 100%;
-  }
-
-  .activities-list-item::before {
-    font-size: 24px;
-  }
-
-  .activities-list-descr {
-    font-size: 16px;
-  }
-
-  .activities-container img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
+.team-title {
+  font-weight: 500;
+font-size: 48px;
+line-height: 1;
+letter-spacing: -0.02em;
+text-align: center;
+color: #fbfbfb;
+  margin: 0 auto;
+  max-width: 754px;
+  margin-bottom: 25px;
 }
 
+.team-descr {
+ font-weight: 400;
+font-size: 14px;
+line-height: 1.28571;
+letter-spacing: -0.02em;
+text-align: center;
+color: #fbfbfb;
+  opacity: 0.4;
+  margin: 0 auto;
+  max-width: 521px;
+  margin-bottom: 75px;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.team-list-item {
+  width: calc(100% - 32px*2)/3;
+  background: #fbfbfb;
+  border-radius: 24px;
+  padding: 32px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-list-item img,
+.team-list > li img {
+width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 24px;
+}
+
+.team-name {
+  font-weight: 500;
+font-size: 18px;
+line-height: 1.1;
+letter-spacing: -0.02em;
+text-align: center;
+color: #040306;
+  margin-bottom: 8px;
+}
+
+.team-info {
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.4;
+letter-spacing: -0.02em;
+text-align: center;
+color: rgba(4, 3, 6, 0.4);
+width: 290px;
+}
