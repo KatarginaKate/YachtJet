@@ -392,7 +392,7 @@ img {
   position: relative;
   padding-top: 40px;
   max-width: 318px;
-  width: calc(50% - 16px);
+  width: calc(50px - 16px);
 }
 
 .activities-list-item::before {
