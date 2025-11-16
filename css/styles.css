@@ -513,7 +513,7 @@ img {
   outline: transparent;
   color: #fbfbfb;
   resize: none;
-  margin-bottom: calc(50px-18px);
+  margin-bottom: 20px;
 }
 
 .textarea-form:focus,
