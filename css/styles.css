@@ -88,8 +88,7 @@ nav {
   display: flex;
   gap: 4px;
 }
-/* .header-list-item {
-} */
+
 .nav-list-link {
   display: block;
   background: rgba(27, 65, 75, 0.5);
@@ -103,8 +102,8 @@ nav {
   color: #fbfbfb;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-list-link:hover,
-.header-list-link:focus {
+.nav-list-link:hover,
+.nav-list-link:focus {
   background: #1b414b;
 }
 .social-list {
@@ -123,6 +122,7 @@ nav {
 
 .social-icon {
   fill: #1b414b;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icon:hover,
 .social-icon:focus {
@@ -183,6 +183,8 @@ nav {
   letter-spacing: -0.02em;
   color: #fbfbfb;
   margin: 0 auto;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-btn:hover,
@@ -359,7 +361,7 @@ nav {
   letter-spacing: -0.02em;
   color: #fbfbfb;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .dreamyacht-btn:hover,
@@ -522,6 +524,7 @@ nav {
   color: #fbfbfb;
   resize: none;
   margin-bottom: 20px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .textarea-form:focus,
@@ -551,6 +554,8 @@ nav {
   line-height: 1.1;
   letter-spacing: -0.02em;
   color: #fbfbfb;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-btn:hover,
@@ -639,7 +644,7 @@ nav {
   max-width: 1390px;
   border-radius: 24px 24px 0 0;
   background: #1b414b;
-  padding: 50px 75px;
+  padding: 50px 75px 20px 75px;
 }
 
 .footer-logo {
@@ -663,6 +668,8 @@ nav {
 
 .footer-link {
   background: rgba(251, 251, 251, 0.3);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:hover,
@@ -672,8 +679,14 @@ nav {
 }
 
 .footer-icon {
+  fill: rgba(251, 251, 251, 0.8);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-icon:hover,
+.foter-icon:focus {
   fill: #fbfbfb;
 }
+
 .footer-info {
   display: flex;
   flex-direction: column;
