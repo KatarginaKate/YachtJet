@@ -398,9 +398,8 @@ nav {
 
 .activities-list-item {
   position: relative;
-  padding-top: 40px;
-  max-width: 318px;
-  width: calc(50% - 16px);
+  width: calc((100% - 32px) / 2);
+  padding-top: 70px;
 }
 
 .activities-list-item::before {
@@ -409,6 +408,7 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
+  font-weight: 500;
   font-size: 32px;
   line-height: 1;
   letter-spacing: -0.05em;
@@ -418,18 +418,14 @@ nav {
 .activities-list-item::after {
   content: "";
   position: absolute;
-  top: 36px;
+  top: 50px;
   left: 0;
   width: 100%;
-  max-width: 318px;
-  border-radius: 18px;
   height: 2px;
   background: rgba(251, 251, 251, 0.1);
 }
 
 .activities-list-descr {
-  margin: 0;
-  margin-top: 18px;
   font-weight: 400;
   font-size: 13px;
   line-height: 1.15;
