@@ -98,7 +98,7 @@ nav {
 .nav-list.header,
 .social-list.header {
   display: none;
-} 
+}
 
 .nav-list-link {
   display: block;
@@ -118,13 +118,12 @@ nav {
   background: #1b414b;
 }
 
-
 .social-link {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
-} 
+}
 
 .social-icon {
   fill: #1b414b;
@@ -681,10 +680,31 @@ nav {
 }
 
 .footer-container {
-  max-width: 355px;
-  border-radius: 16px 16px 0 0;
   background: #1b414b;
+  border-radius: 16px 16px 0 0;
   padding: 40px 20px 20px 20px;
+  max-width: 355px;
+}
+
+/* Shared styles for .footer-container */
+@media (min-width: 768px) {
+  .footer-container {
+    border-radius: 20px 20px 0 0;
+    padding: 50px 48px 20px 48px;
+    max-width: 768px;
+  }
+}
+@media (min-width: 1280px) {
+  .footer-container {
+    border-radius: 24px 24px 0 0;
+    padding: 50px 75px 20px 75px;
+    max-width: 1390px;
+  }
+}
+@media (min-width: 1440px) {
+  .footer-container {
+    max-width: 1440px;
+  }
 }
 
 .footer-logo {
@@ -727,7 +747,6 @@ nav {
   width: 100%;
 }
 
-
 .footer-link {
   background: rgba(251, 251, 251, 0.3);
   border-radius: 8px;
@@ -768,14 +787,14 @@ nav {
 }
 
 .footer-text {
- font-weight: 400;
-font-size: 18px;
-line-height: 1;
-letter-spacing: -0.02em;
-text-align: center;
-color: #fbfbfb;
-width: 279px;
-margin-bottom: 82px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fbfbfb;
+  width: 279px;
+  margin-bottom: 82px;
 }
 
 .footer-brand {
@@ -812,7 +831,7 @@ margin-bottom: 82px;
 /* Tablet (min-width: 768px) */
 @media (min-width: 768px) {
   .section {
-    padding: 60px 0;
+    padding: 75px 0;
   }
 
   .container {
@@ -835,6 +854,19 @@ margin-bottom: 82px;
     flex-wrap: nowrap;
   }
 
+  .nav-list.header {
+    display: flex;
+    gap: 4px;
+  }
+  .nav-list-link:hover,
+  .nav-list-link:focus {
+    background: #1b414b;
+  }
+  .social-list.header {
+    display: flex;
+    gap: 8px;
+  }
+
   .header-nav {
     gap: 200px;
   }
@@ -843,17 +875,9 @@ margin-bottom: 82px;
     font-size: 18px;
   }
 
-  .nav-list {
-    display: flex;
-  }
-
   .nav-list-link {
     padding: 12px 20px;
     font-size: 9px;
-  }
-
-  .social-list {
-    display: flex;
   }
 
   .social-icon {
@@ -869,16 +893,32 @@ margin-bottom: 82px;
     padding-top: 140px;
     padding-bottom: 80px;
     min-height: 500px;
+    background: url(../images/first-screen-yacht.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .main-title {
-    font-size: 48px;
-    padding-bottom: 20px;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fbfbfb;
+    max-width: 665px;
+    padding-top: 200px;
+    padding-bottom: 24px;
   }
 
   .main-descr {
-    font-size: 15px;
-    padding-bottom: 40px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: rgba(251, 251, 251, 0.7);
+    max-width: 576px;
+    padding-bottom: 48px;
   }
 
   .main-btn {
@@ -887,34 +927,55 @@ margin-bottom: 82px;
   }
 
   .yachtjet-section {
+    max-width: 704px;
     border-radius: 20px;
-    gap: 32px;
   }
 
   .yachtjet-info {
-    flex-direction: row;
     padding: 40px;
-    gap: 32px;
   }
 
   .yachtjet-title {
-    font-size: 40px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #1b414b;
+    width: 536px;
+    padding-bottom: 50px;
   }
 
+  .yachtjet-about {
+    gap: 20px;
+  }
   .jachtjet-paragraph-title {
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #1b414b;
+    width: 389px;
   }
 
   .jachtjet-paragraph-descr {
     font-size: 13px;
+    width: 385px;
   }
 
   .yachtjet-img {
     border-radius: 20px;
+    width: 704px;
+    height: 470px;
   }
 
   .dreamyacht-main-title {
-    font-size: 40px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fbfbfb;
+    max-width: 616px;
     margin-bottom: 50px;
   }
 
@@ -947,6 +1008,9 @@ margin-bottom: 82px;
     font-size: 13px;
   }
 
+  .dreamyacht-item:nth-child(3) {
+    display: none;
+  }
   .dreamyacht-btn {
     padding: 15px 36px;
     font-size: 17px;
@@ -985,26 +1049,28 @@ margin-bottom: 82px;
   }
 
   .activities-container img {
-    width: 50%;
-    max-width: 400px;
-    height: 100%;
+    width: 100%;
+    height: 424px;
   }
 
   .container.rentyacht-container {
-    flex-direction: row;
+    flex-direction: column;
     border-radius: 20px;
     gap: 40px;
+    justify-content: center;
+    align-items: center;
   }
 
   .rentyacht-container img {
-    width: 50%;
-    max-width: 500px;
-    height: auto;
+    max-width: 704px;
+    height: 534px;
+    order: 1;
   }
 
   .rentyacht-title {
     font-size: 40px;
     margin-bottom: 40px;
+    align-items: center;
   }
 
   .rentyacht-form {
@@ -1015,6 +1081,7 @@ margin-bottom: 82px;
   }
 
   .input-form {
+    padding: 18px 388px 18px 18px;
     width: 100%;
     height: 52px;
   }
@@ -1033,17 +1100,18 @@ margin-bottom: 82px;
   }
 
   .team-title {
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-size: 48px;
+    margin-bottom: 25px;
   }
 
   .team-descr {
-    font-size: 13px;
-    margin-bottom: 50px;
+    font-size: 14px;
+    width: 571px;
+    margin-bottom: 75px;
   }
 
   .team-list {
-    flex-direction: column;
+    flex-direction: row;
     gap: 24px;
     align-items: center;
   }
@@ -1054,7 +1122,9 @@ margin-bottom: 82px;
     border-radius: 20px;
     padding: 28px;
   }
-
+  .team-list-item:nth-child(3) {
+    display: none;
+  }
   .team-name {
     font-size: 17px;
   }
@@ -1063,11 +1133,17 @@ margin-bottom: 82px;
     font-size: 15px;
   }
 
+.section .container {
+    width: 736px;
+}
+
   .footer-container {
-    padding: 40px 50px 20px 50px;
+    padding: 50px 48px 20px 48px;
     border-radius: 20px 20px 0 0;
   }
-
+  .footer-list {
+    justify-content: flex-end;
+  }
   .footer-contacts {
     flex-direction: row;
     margin-bottom: 60px;
@@ -1075,15 +1151,13 @@ margin-bottom: 82px;
   }
 
   .footer-nav {
-    flex-direction: row;
-    gap: 200px;
-    margin-right: 0;
-    width: auto;
+    gap: 110px;
   }
 
   .footer-text {
-    font-size: 28px;
-    margin-bottom: 60px;
+    font-size: 32px;
+    margin-bottom: 99px;
+    width: 640px;
   }
 
   .footer-brand {
