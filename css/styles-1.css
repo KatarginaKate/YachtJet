@@ -323,6 +323,14 @@ nav {
   padding: 16px;
 }
 
+.dreamyacht-item:nth-child(2) {
+  display: none;
+}
+
+.dreamyacht-item:nth-child(3) {
+  display: none;
+}
+
 .dreamyacht-clasification {
   position: relative;
   display: flex;
@@ -648,6 +656,14 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.team-list-item:nth-child(2) {
+  display: none;
+}
+
+.team-list-item:nth-child(3) {
+  display: none;
 }
 
 .team-list-item img {
@@ -1007,6 +1023,9 @@ nav {
   .dreamyacht-details-list li p:last-child {
     font-size: 13px;
   }
+  .dreamyacht-item:nth-child(2) {
+    display: block;
+  }
 
   .dreamyacht-item:nth-child(3) {
     display: none;
@@ -1122,6 +1141,10 @@ nav {
     border-radius: 20px;
     padding: 28px;
   }
+
+  .team-list-item:nth-child(2) {
+  display: flex;
+}
   .team-list-item:nth-child(3) {
     display: none;
   }
