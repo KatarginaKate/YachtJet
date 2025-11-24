@@ -1099,17 +1099,16 @@ nav {
     padding: 0;
   }
 
-  .input-form {
-    padding: 18px 388px 18px 18px;
+  /* .input-form {
     width: 100%;
     height: 52px;
-  }
+  } */
 
-  .textarea-form {
+  /* .textarea-form {
     width: 100%;
     height: 110px;
     margin-bottom: 18px;
-  }
+  } */
 
   .form-btn {
     width: auto;
@@ -1143,8 +1142,8 @@ nav {
   }
 
   .team-list-item:nth-child(2) {
-  display: flex;
-}
+    display: flex;
+  }
   .team-list-item:nth-child(3) {
     display: none;
   }
@@ -1156,9 +1155,9 @@ nav {
     font-size: 15px;
   }
 
-.section .container {
+  .section .container {
     width: 736px;
-}
+  }
 
   .footer-container {
     padding: 50px 48px 20px 48px;
@@ -1200,7 +1199,7 @@ nav {
   }
 
   .container {
-    max-width: 1280px;
+    max-width: 1180px;
     padding: 0 15px;
   }
 
@@ -1210,20 +1209,19 @@ nav {
 
   .header-page {
     top: 32px;
-    width: 1240px;
+    max-width: 1180px;
     padding: 4px 30px;
   }
 
-  .header-page .container {
-    flex-wrap: nowrap;
-  }
-
-  .header-nav {
-    gap: 375px;
+  .header-page.container {
+    max-width: 1080px;
   }
 
   .header-logo {
     font-size: 20px;
+  }
+  .header-nav {
+    gap: 296px;
   }
 
   .nav-list {
@@ -1249,9 +1247,9 @@ nav {
   }
 
   .main-section {
-    padding-top: calc(48px + 155px);
-    padding-bottom: calc(48px + 150px);
-    max-width: 1440px;
+    padding-top: 160px;
+    padding-bottom: 100px;
+    max-width: 1180px;
     min-height: auto;
   }
 
@@ -1278,23 +1276,30 @@ nav {
   }
 
   .yachtjet-section {
-    max-width: 1340px;
+    max-width: 1180px;
+    background: #fbfbfb;
     border-radius: 24px;
-    gap: 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
   }
 
   .yachtjet-info {
-    padding: 50px 50px;
-    gap: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 189px;
   }
 
   .yachtjet-title {
     font-size: 48px;
-    max-width: 550px;
+    width: 537px;
   }
 
   .yachtjet-about {
-    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    width: 354px;
     gap: 20px;
   }
 
@@ -1308,9 +1313,14 @@ nav {
   }
 
   .yachtjet-img {
+    width: 100%;
+    object-fit: cover;
     border-radius: 24px;
   }
 
+  .container.dreamyacht-container {
+    width: 1180px;
+  }
   .dreamyacht-main-title {
     font-size: 48px;
     max-width: 714px;
@@ -1319,12 +1329,15 @@ nav {
 
   .dreamyacht-list {
     flex-direction: row;
-    flex-wrap: nowrap;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 32px;
     margin-bottom: 50px;
     justify-content: center;
   }
-
+  .dreamyacht-item:nth-child(3) {
+    display: block;
+  }
   .dreamyacht-item {
     width: calc((100% - 32px * 2) / 3);
     border-radius: 24px;
@@ -1335,7 +1348,7 @@ nav {
   }
 
   .dreamyacht-clasification::after {
-    width: 328px;
+    width: 265px;
   }
 
   .dreamyacht-title {
@@ -1357,19 +1370,25 @@ nav {
   }
 
   .container.activities-container {
-    max-width: 1340px;
+    width: 1180px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
     border-radius: 24px;
+    overflow: hidden;
     gap: 32px;
   }
 
   .activities-list {
+    list-style: none;
+    counter-reset: activity-counter;
     column-gap: 32px;
     row-gap: 44px;
     padding: 90px 50px;
   }
 
   .activities-list-item {
-    width: calc((100% - 32px) / 2);
+    width: calc((100% - 44px) / 2);
     padding-top: 70px;
   }
 
@@ -1387,40 +1406,37 @@ nav {
   }
 
   .activities-container img {
-    width: 540px;
+    width: 432px;
     max-width: 50%;
+    margin: 0;
   }
 
-  .container.rentyacht-container {
-    max-width: 1340px;
+  .section .container.rentyacht-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1180px;
     border-radius: 24px;
-    gap: 50px;
   }
 
   .rentyacht-container img {
-    width: 768px;
+    order: 0;
+    width: 658px;
+    height: auto;
+    display: block;
   }
 
   .rentyacht-title {
     font-size: 48px;
-    margin-bottom: 50px;
+    margin: 0 0 24px 0;
   }
 
   .rentyacht-form {
     width: 472px;
-    height: 332px;
     gap: 18px;
-  }
-
-  .input-form {
-    width: 472px;
-    height: 54px;
-  }
-
-  .textarea-form {
-    width: 472px;
-    height: 116px;
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .form-btn {
@@ -1428,6 +1444,11 @@ nav {
     padding: 18px 75px;
     width: 194px;
     font-size: 18px;
+    margin: 0;
+  }
+
+  .section .container.team-section-container {
+    width: 1180px;
   }
 
   .team-title {
@@ -1456,6 +1477,10 @@ nav {
     padding: 32px 36px;
   }
 
+  .team-list-item:nth-child(3) {
+    display: flex;
+  }
+
   .team-list-item img {
     margin-bottom: 24px;
   }
@@ -1470,8 +1495,8 @@ nav {
     width: 290px;
   }
 
-  .footer-container {
-    max-width: 1390px;
+  .container.footer-container {
+    width: 1180px;
     padding: 50px 75px 20px 75px;
     border-radius: 24px 24px 0 0;
   }
@@ -1481,8 +1506,8 @@ nav {
   }
 
   .footer-nav {
-    gap: 409px;
-    margin-right: 388px;
+    gap: 330px;
+    margin-right: 311px;
   }
 
   .footer-text {
@@ -1503,15 +1528,15 @@ nav {
 /* Desktop 1440 (min-width: 1440px) */
 @media (min-width: 1440px) {
   .container {
-    max-width: 1440px;
+    max-width: 1180px;
   }
 
   .header-page {
-    width: 1340px;
+    width: 1240px;
   }
 
   .yachtjet-section {
-    max-width: 1440px;
+    max-width: 1340px;
   }
 
   .container.activities-container {
