@@ -879,8 +879,8 @@ nav {
   }
 
   .social-icon {
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
   }
 
   .burger-btn {
@@ -1158,6 +1158,22 @@ nav {
   .footer-brand-text {
     font-size: 13px;
   }
+
+  .footer-link:hover,
+  .footer-link:focus {
+    background: #fbfbfb;
+    color: #1b414b;
+  }
+  .footer-icon {
+    fill: #fbfbfb;
+    stroke-width: 1px;
+    stroke: #000;
+  }
+
+  .footer-icon:hover,
+  .foter-icon:focus {
+    fill: rgba(251, 251, 251, 0.8);
+  }
 }
 
 /* Desktop 1280 (min-width: 1280px) */
@@ -1186,11 +1202,6 @@ nav {
   .nav-list-link {
     padding: 15px 25px 15px 24px;
     font-size: 9px;
-  }
-
-  .social-icon {
-    width: 19px;
-    height: 19px;
   }
 
   /* Main */
