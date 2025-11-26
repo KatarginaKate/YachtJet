@@ -481,8 +481,6 @@ nav {
 
 .activities-container img {
   border-radius: 24px;
-  width: 335px;
-  height: 424px;
   height: auto;
   object-fit: cover;
   flex-shrink: 0;
@@ -712,13 +710,6 @@ nav {
 .foter-icon:focus {
   fill: #fbfbfb;
 }
-/* Shared styles for .footer-container */
-
-@media (min-width: 1440px) {
-  .footer-container {
-    max-width: 1440px;
-  }
-}
 
 .footer-logo {
   color: #fbfbfb;
@@ -847,8 +838,8 @@ nav {
     padding: 75px 0;
   }
 
-  .section .container {
-    width: 736px;
+  .container {
+    max-width: 736px;
   }
 
   /* Header */
@@ -1133,7 +1124,7 @@ nav {
   .footer-container {
     padding: 50px 48px 20px 48px;
     border-radius: 20px 20px 0 0;
-    max-width: 768px;
+    width: 768px;
   }
 
   .footer-list {
@@ -1171,7 +1162,7 @@ nav {
 
 /* Desktop 1280 (min-width: 1280px) */
 @media (min-width: 1280px) {
-  .section .container {
+  .container {
     max-width: 1180px;
     padding: 0 15px;
   }
@@ -1217,6 +1208,7 @@ nav {
   .main-title {
     font-size: 80px;
     max-width: 1001px;
+    margin: 0 auto;
     padding-bottom: 24px;
   }
 
@@ -1276,7 +1268,7 @@ nav {
   /* Choose your dream yacht section */
 
   .container.dreamyacht-container {
-    width: 1180px;
+    max-width: 1180px;
   }
   .dreamyacht-main-title {
     margin-top: 77px;
@@ -1323,7 +1315,7 @@ nav {
   /* Activities section */
 
   .container.activities-container {
-    width: 1180px;
+    max-width: 1180px;
     display: flex;
     align-items: stretch;
     justify-content: space-between;
@@ -1469,72 +1461,48 @@ nav {
 /* Desktop 1440 (min-width: 1440px) */
 
 @media (min-width: 1440px) {
-  /* page containers */
-  .section .container,
-  .container {
-    max-width: 1340px;
-    padding: 0 20px;
-    margin: 0 auto;
-  }
-
-  /* header sizing */
   .header-page {
-    width: 1240px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 32px;
-    padding: 6px 32px;
+    max-width: 1240px;
   }
 
-  /* main */
+  .header-page .container {
+    max-width: 1240px;
+  }
   .main-section {
     max-width: 1340px;
-    padding-top: 160px;
-    padding-bottom: 140px;
-    background-position: center;
   }
 
-  /* YachtJet fleet */
   .yachtjet-section {
     max-width: 1340px;
-    border-radius: 24px;
-    gap: 32px;
   }
-
   .yachtjet-info {
-    padding: 64px;
-    display: flex;
-    justify-content: space-between;
-    gap: 48px;
+    gap: 299px;
   }
 
-  /* dreamyacht */
   .container.dreamyacht-container {
-    width: 1240px;
+    max-width: 1240px;
   }
 
-  .container.activities-container,
+  .container.activities-container {
+    max-width: 1340px;
+  }
+
+  .activities-container img {
+    height: auto;
+  }
+
   .container.rentyacht-container {
     width: 1340px;
   }
-
   .rentyacht-container img {
     max-width: 768px;
-    height: auto;
-    display: block;
-  }
-
-  .rentyacht-form {
-    max-width: 472px;
   }
 
   .container.footer-container {
-    width: 1390px;
-    padding: 50px 75px 20px 75px;
-    border-radius: 24px 24px 0 0;
+    max-width: 1390px;
   }
-}
-.footer-nav {
-  gap: 409px;
-  margin-right: 388px;
+  .footer-nav {
+    gap: 409px;
+    margin-right: 388px;
+  }
 }
