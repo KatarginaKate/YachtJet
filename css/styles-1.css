@@ -169,6 +169,13 @@ nav {
   background-size: cover;
   max-width: 100%;
 }
+
+@media (min-resolution: 192dpi) {
+  .main-section {
+    background-image: 
+      url("../images/first-screen-yacht@2x-mob.png");
+  }
+}
 .main-section.container {
   max-width: 100%;
   padding: 0 20px;
@@ -894,6 +901,12 @@ nav {
     background-position: center;
     background-size: cover;
   }
+@media (min-resolution: 192dpi) {
+  .main-section {
+    background-image: 
+      url("../images/first-screen-yacht@2x-tab.png");
+  }
+}
 
   .main-title {
     font-size: 70px;
@@ -1210,8 +1223,15 @@ nav {
     padding-bottom: 180px;
     max-width: 1180px;
     min-height: auto;
+    background-image: url(../images/first-screen-yacht-desc1280.png);
   }
 
+  @media (min-resolution: 192dpi) {
+  .main-section {
+    background-image: 
+      url("../images/first-screen-yacht@2x-desc1280.png");
+  }
+}
   .main-section.container {
     max-width: 1001px;
   }
@@ -1486,7 +1506,15 @@ nav {
   }
   .main-section {
     max-width: 1340px;
+    background-image: url(../images/first-screen-yacht.png);
   }
+
+  @media (min-resolution: 192dpi) {
+  .main-section {
+    background-image: 
+      url("../images/first-screen-yacht@2x.png");
+  }
+}
 
   .yachtjet-section {
     max-width: 1340px;
