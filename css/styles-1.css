@@ -501,7 +501,7 @@ nav {
   gap: 24px;
 }
 
-.rentyacht-container img {
+.rentyacht-container picture {
   border-radius: 24px;
   height: 412px;
   object-fit: cover;
@@ -1038,15 +1038,17 @@ nav {
   /* Rentyacht section */
 
   .container.rentyacht-container {
+    display: flex;
     flex-direction: column;
     border-radius: 20px;
     justify-content: center;
     align-items: center;
   }
 
-  .rentyacht-container img {
+  .rentyacht-container picture {
     max-width: 704px;
     height: 534px;
+    order: 1;
   }
 
   .rentyacht-title {
@@ -1374,14 +1376,14 @@ nav {
     margin: 0 auto;
   }
 
-  .rentyacht-container img {
+  .rentyacht-container picture {
     width: 658px;
     order: 0;
     border-radius: 24px;
   }
 
   .rentyacht-form {
-    max-width: 472px;
+    width: 472px;
   }
 
   .rentyacht-title {
@@ -1519,7 +1521,6 @@ nav {
 
   .rentyacht-container img {
     width: 768px;
-    max-width: 60%;
     height: auto;
     border-radius: 24px;
   }
