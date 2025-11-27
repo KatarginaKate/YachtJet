@@ -96,7 +96,7 @@ nav {
 
 .nav-list-link {
   display: block;
-  background: rgba(27, 65, 75, 0.5);
+  background-color: rgba(27, 65, 75, 0.5);
   border-radius: 8px;
   padding: 10px 16px;
   font-weight: 400;
@@ -105,11 +105,11 @@ nav {
   text-transform: uppercase;
   text-align: center;
   color: #fbfbfb;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-list-link:hover,
 .nav-list-link:focus {
-  background: #1b414b;
+  background-color: #1b414b;
 }
 
 .social-link {
@@ -319,20 +319,20 @@ nav {
   padding: 14px 32px;
   width: auto;
   min-width: 160px;
-  background: #1b414b;
+  background-color: #1b414b;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1;
   letter-spacing: -0.02em;
   color: #fbfbfb;
   margin: 0 auto;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-btn:hover,
 .main-btn:focus {
-  background: #fbfbfb;
+  background-color: #fbfbfb;
   color: #1b414b;
 }
 
@@ -513,7 +513,7 @@ nav {
 
 .dreamyacht-btn {
   display: inline-block;
-  background: #0e1823;
+  background-color: #0e1823;
   border: 1px solid rgba(251, 251, 251, 0.35);
   border-radius: 15px;
   padding: 14px 32px;
@@ -523,12 +523,12 @@ nav {
   letter-spacing: -0.02em;
   color: #fbfbfb;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .dreamyacht-btn:hover,
 .dreamyacht-btn:focus {
-  background: #fbfbfb;
+  background-color: #fbfbfb;
   color: #1b414b;
 }
 
@@ -702,7 +702,7 @@ nav {
   min-width: 160px;
   border-radius: 15px;
   padding: 16px 40px;
-  background: #1b414b;
+  background-color: #1b414b;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1;
@@ -710,12 +710,12 @@ nav {
   color: #fbfbfb;
   margin-bottom: 80px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-btn:hover,
 .form-btn:focus {
-  background: #fbfbfb;
+  background-color: #fbfbfb;
   color: #1b414b;
 }
 
@@ -806,7 +806,7 @@ nav {
 }
 
 .footer-container {
-  background: #1b414b;
+  background-color: #1b414b;
   border-radius: 16px 16px 0 0;
   padding: 40px 20px 20px 20px;
   max-width: 355px;
@@ -815,11 +815,11 @@ nav {
 .footer-link {
   background: rgba(251, 251, 251, 0.3);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-link:hover,
 .footer-link:focus {
-  background: #fbfbfb;
+  background-color: #fbfbfb;
   color: #1b414b;
 }
 
@@ -869,7 +869,7 @@ nav {
 }
 
 .footer-link {
-  background: rgba(251, 251, 251, 0.3);
+  background-color: rgba(251, 251, 251, 0.3);
   border-radius: 8px;
   padding: 10px 16px;
   font-weight: 400;
@@ -879,12 +879,12 @@ nav {
   text-align: center;
   color: #fbfbfb;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:hover,
 .footer-link:focus {
-  background: #fbfbfb;
+  background-color: #fbfbfb;
   color: #1b414b;
 }
 
