@@ -1435,7 +1435,7 @@ nav {
   }
 
   .dreamyacht-clasification::after {
-    width: 265px;
+    width: 297px;
   }
 
   .dreamyacht-title {
@@ -1634,6 +1634,9 @@ nav {
   .container.dreamyacht-container {
     max-width: 1240px;
   }
+  .dreamyacht-clasification::after {
+        width: 316px;
+    }
 
   .container.activities-container {
     max-width: 1340px;
