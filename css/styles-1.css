@@ -1092,9 +1092,9 @@ nav {
     border-radius: 20px;
   }
 
-  .dreamyacht-clasification::after {
-    width: 328px;
-  }
+      .dreamyacht-clasification::after {
+        width: 271px;
+    }
 
   .dreamyacht-title {
     font-size: 15px;
