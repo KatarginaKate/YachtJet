@@ -1,25 +1,106 @@
-Перелік git команд
+# 🚤 YachtJet
 
-git branch — показує лише локальні гілки
+<p align="center">
+  A modern and fully responsive website for premium yacht services ✨  
+</p>
 
-git branch -r — показує лише віддалені гілки
+<p align="center">
+  <a href="https://katarginakate.github.io/YachtJet/"><b>🔗 Live Demo</b></a>
+</p>
 
-git branch -a — показує усі гілки, як локальні так і віддалені
+---
 
-git switch -c name-your-branch — створює нову гілку
+## 🚀 About the Project
 
-git switch name-branch — переключає на іншу гілку
+**YachtJet** is a responsive web application designed to showcase luxury yacht rental services.  
+The project focuses on clean UI, modern layout practices, and a smooth user experience across all devices.
 
-git fetch — завантажує останні зміни з віддаленого репозиторію, але не вносить їх у поточні гілки
+---
 
-git pull — одночасно і завантажує, і вносить у локальний репозиторій усі останні зміни (на усіх гілках), які були зроблені у віддаленому репозиторію
+## ✨ Features
 
-git pull origin footer — завантажить і застосує усі зміни з віддаленої (origin ) гілки footer до локальної
+- 📱 Fully responsive design (mobile / tablet / desktop)  
+- 🎯 Minimalistic and modern UI  
+- ⚡ Optimized performance  
+- 🧭 Easy and intuitive navigation  
+- 🖼 Visually rich layout  
 
-git commit -m "add files" — застосує коміти до поточної гілки
+---
 
-git merge page-header — зливає у поточну гілку код з гілки page-header
+## 🛠 Tech Stack
 
-git push origin main — віддаленої гілки main
+- **HTML5**  
+- **CSS3 (Flexbox)**  
+- **JavaScript (ES6+)**  
+- **Vite**  
 
-git branch -d page-header — видаляє локальну гілку page-header# YachtJet
+---
+
+## 📸 Preview
+
+<p align="center">
+  <img src="./images/rentyacht.png" alt="YachtJet Preview" width="300"/>
+</p>
+
+## ⚙️ Getting Started
+
+### 📦 Installation
+```
+git clone https://github.com/KatarginaKate/YachtJet.git
+cd YachtJet
+npm install
+npm run dev
+```
+---
+
+## 📦 Project Overview
+### 📂 Structure
+
+```
+YachtJet/
+│── css/
+│   ├── styles.css
+│── images/
+│── js/
+│── .gitignore
+│── index.html
+│── README.md
+```
+
+---
+
+## 👩‍💻 My Role
+
+- Designed and developed the entire project independently
+- Built a fully responsive layout for all screen sizes
+- Implemented UI components and page structure
+- Applied modern CSS techniques
+- Ensured clean, scalable, and maintainable code
+
+---
+
+## 📈 Future Improvements
+
+- 🔍 Add booking functionality
+- 🌐 Multi-language support
+- ⚡ Improve performance optimization
+- 🎨 Add animations and micro-interactions
+
+---
+
+## 👤 Author
+
+### Kateryna Nehoda
+
+### GitHub: https://github.com/KatarginaKate
+
+---
+
+## ⭐ Show your support
+
+If you like this project, give it a ⭐️ on GitHub!
+
+
+
+
+
