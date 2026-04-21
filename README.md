@@ -31,8 +31,7 @@ The project focuses on clean UI, modern layout practices, and a smooth user expe
 
 - **HTML5**  
 - **CSS3 (Flexbox)**  
-- **JavaScript (ES6+)**  
-- **Vite**  
+- **JavaScript (ES6+)**   
 
 ---
 
@@ -48,8 +47,13 @@ The project focuses on clean UI, modern layout practices, and a smooth user expe
 ```
 git clone https://github.com/KatarginaKate/YachtJet.git
 cd YachtJet
-npm install
-npm run dev
+
+To run the project locally:
+
+1. Install the **Live Server** extension in VS Code  
+2. Right‑click `index.html`  
+3. Select **"Open with Live Server"**
+
 ```
 ---
 
