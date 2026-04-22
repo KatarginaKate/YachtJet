@@ -811,6 +811,10 @@ nav {
   max-width: 290px;
 }
 
+.footer-section {
+  padding-bottom: 0;
+}
+
 .footer-container {
   background-color: #1b414b;
   border-radius: 16px 16px 0 0;
@@ -1251,6 +1255,10 @@ nav {
   }
 
   /* Footer */
+
+  .footer-section {
+    padding-bottom: 0;
+  }
 
   .footer-container {
     padding: 50px 48px 20px 48px;
